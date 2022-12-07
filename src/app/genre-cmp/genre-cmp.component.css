@@ -1,0 +1,14 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXJ-AVinVZx8i4UY3pXH26NxXwalhRlXSlvg&usqp=CAU');
+    background-size: cover;
+  }
+  .row{
+    display: inline-flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }

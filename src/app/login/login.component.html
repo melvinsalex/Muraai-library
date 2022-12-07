@@ -1,0 +1,45 @@
+
+<div id="div" >
+<!-- <h1 >Muraai information technologies<button mat-button (click)="addBook()">Add</button></h1> -->
+<!-- <h1 >Muraai information technologies</h1> -->
+
+
+</div>
+<mat-drawer-container  class="example-container" >
+
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+     
+      <button  mat-raised-button (click)="dashboard()"> 
+        Library
+      </button>
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        Menu
+      </button>
+    </div>
+    <div class="all">
+        <form [formGroup]="formdata" (ngSubmit)="login(formdata.value)">
+          <mat-form-field appearance="fill">
+            <mat-label for="userName">User Name : </mat-label>
+            <input matInput type="text" name="userName" formControlName="email" placeholder="Ex. John_007" class="form-control" >
+          </mat-form-field>
+          <br><br>
+
+            <mat-form-field appearance="fill">
+            <mat-label for="password">Password : </mat-label>
+            <input matInput type="password" name="password" formControlName="password" placeholder="Ex. 123456789" class="form-control" >
+          </mat-form-field>
+          <br><br>
+            <button mat-stroked-button (click)="loginSnackBar()" (click)="login" >Login</button>
+            <!-- <button mat-stroked-button (click)="signup()">Sign Up</button> -->
+
+               
+        </form>
+        </div>
+  
+  </mat-drawer-container>
+  
+
+

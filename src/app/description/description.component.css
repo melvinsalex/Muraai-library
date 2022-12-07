@@ -1,0 +1,21 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  /* .example-header-image {
+    background-image: ('assets\71l6aEDzaFS.jpg');
+    background-size: cover;
+  } */
+  .i{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding: 10px;
+  }
+    
+   
+.bookDetails{
+  padding-left: 30px;
+  
+}
+  

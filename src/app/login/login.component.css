@@ -1,0 +1,28 @@
+#div{
+  background-color: rgb(189, 198, 195);
+  text-align: center;
+}
+.all{
+    
+    text-align: center;
+    padding-top: 30px;
+}
+ .example-container {
+height: fit-content;
+
+
+justify-content: stretch;
+
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+  } 
+  
+  .example-sidenav-content {
+    
+    height: fit-content
+    
+    
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }

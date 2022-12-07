@@ -1,0 +1,25 @@
+<app-header></app-header>
+<div class="i">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Adventures Of Tom Sawyer</mat-card-title>
+      <mat-card-subtitle>Mark Twain</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="assets\71l6aEDzaFS.jpg" alt="Adventures Of Tom Sawyer">
+
+    <mat-card-actions>
+      <button mat-button >LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+  <app-book-details [Value]="idDetails" (parentEditFunction)="editRow($event)" (parentDelFunction)="deleteRow(idDetails.id)"></app-book-details>
+  
+
+  <!-- <div class="bookDetails">
+    <p>ID: {{idDetails.id}}</p><br>
+    <p>Book name:{{idDetails.bookName}}</p><br>
+    <p> Author:{{idDetails.author}}</p><br>
+    <p>Genre:{{idDetails.genre}}</p><br>
+  </div> -->
+</div>

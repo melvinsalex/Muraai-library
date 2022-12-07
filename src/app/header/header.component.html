@@ -1,0 +1,78 @@
+<div id="div" >
+   <div id="image"> <img src="\assets\Muraai_Logo.webp" alt="image"></div>
+   
+
+<!-- <h1 >Muraai information technologies<button mat-button (click)="addBook()">Add</button></h1> -->
+<h1 sample>Muraai Information Technologies</h1>
+  <button class="addbutton" mat-button (click)="addPerson()"  *ngIf="loggedIn$ | async" appHighlight>Add</button> <div class="example-sidenav-content">
+   <button *ngIf="loggedIn$ | async" id="namebutton" mat-stroked-button [matMenuTriggerFor]="menu">{{f | titlecase }}{{l | titlecase }}</button>
+   <mat-menu #menu="matMenu" class="menu">
+      <mat-card class="example-card">
+         <mat-card-header class="cardheader">
+           <!-- <div mat-card-avatar class="example-header-image"></div> -->
+           <mat-card-title > {{name | titlecase }}</mat-card-title>
+           <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+         </mat-card-header>
+         <mat-card-content>
+            
+           <h3 >{{name | titlecase }}</h3>
+          <!-- <mat-icon class="picon">account_circle</mat-icon> -->
+           <h5>{{a}}</h5>
+           <!-- <h5>my profile </h5> -->
+         
+         </mat-card-content>
+         
+       </mat-card>
+    </mat-menu>
+    <div class="search">
+      <mat-form-field class="input">
+       <input matInput type="search" placeholder="search" #search>
+     </mat-form-field>
+      <button (click)="onSearch(search.value)"mat-icon-button appHighlight><mat-icon>search_icon</mat-icon></button>
+     </div>
+ </div>
+  
+
+ <button mat-button (click)="snav.toggle()" appHighlight ><mat-icon>menu</mat-icon></button>
+
+</div>
+<mat-sidenav-container class="sidenav" >
+  <mat-sidenav #snav mode="side"  >
+    <mat-nav-list *ngIf="loggedIn$ | async">
+      <a mat-list-item routerLink="/dashboard" (click)="snav.toggle()">Books</a>
+      <a mat-list-item routerLink="/genre-cmp" (click)="snav.toggle()">Genre</a>
+      <a mat-list-item routerLink="/fav-cmp" (click)="snav.toggle()">Favourites</a>
+      <a mat-list-item routerLink="/" (click)="logOut()">Logout</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- <mat-drawer-container  class="example-container" > -->
+
+<!-- <mat-drawer #drawer class="example-sidenav" mode="side">
+   <button  mat-button  (click)="booksFunc()"> 
+     Books       
+   </button><br><br>
+   <button  mat-button (click)="genreFunc()"> 
+     Genre    
+   </button><br><br>
+   <button  mat-button (click)="fav()"> 
+     Favourites
+   </button><br><br>
+   
+   <button  mat-button (click)="logOut()"> 
+     Log Out
+   </button>
+ </mat-drawer>
+
+ <div class="example-sidenav-content">
+   <button type="button" mat-button (click)="drawer.toggle()">
+     Menu
+   </button>
+ </div> -->
+<!-- </mat-drawer-container> -->
+
+ 

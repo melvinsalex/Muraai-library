@@ -1,0 +1,63 @@
+<div class="container">
+    <h1>Book Registration</h1>
+
+    <form [formGroup]="formdata" (ngSubmit)="submit(formdata)">
+        
+            <div class="form.group">
+                <mat-form-field appearance="fill">
+
+                <mat-label for="bookName">Book Name</mat-label><br>
+                <input matInput type="text" name="bookName" value="" class="form-control" formControlName="bookName" >
+            </mat-form-field>
+            </div>
+            
+            <div
+                *ngIf="formdata.controls['bookName'].invalid && (formdata.controls['bookName'].dirty || formdata.controls['bookName']) ">
+            </div>
+            
+            <div *ngIf="formdata.controls['bookName'].errors?.required" >
+                 Book Name is required
+            </div>
+        
+        
+        
+       
+        <!-- </div> -->
+        <!-- <pre></pre>
+    <div class="form-group">
+        <label for="bookName">Book Name</label><br>
+        <input matInput type="text" name="bookName" class="form-control" formControlName="bookName">
+    </div> -->
+        <pre></pre>
+        
+
+            <div class="form-group">
+                <mat-form-field appearance="fill">
+                <mat-label for="author">Author</mat-label><br>
+                <input matInput type="text" name="name" class="form-control" formControlName="author">
+            </mat-form-field>
+            </div>
+        
+        <pre></pre>
+        
+
+            <div class="form-group">
+                <mat-form-field appearance="fill">
+                <mat-label for="genre">Genre</mat-label><br>
+                <input matInput type="text" name="genre" class="form-control" formControlName="genre">
+            </mat-form-field>
+            </div>
+        
+        <pre></pre>
+
+        <button *ngIf="!data?.showUpdateButton" class="btn btn-primary" type="submit"
+            [disabled]="!formdata.valid">Submit</button>
+
+    </form>
+
+    
+    <button *ngIf="data?.showUpdateButton" class="btn btn-primary" mat-stroked-button (click)="openSnackBar()" (click)="update(formdata.value)"
+        [disabled]="!formdata.valid">Update</button>
+    
+
+</div>

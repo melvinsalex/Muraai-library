@@ -1,0 +1,72 @@
+#image{
+
+}
+#div{
+    background-color: rgb(189, 198, 195);
+}
+#namebutton{
+border-radius: 50%;
+background-color: rgb(174, 218, 248);
+
+/* width: 35px;
+height:40px; */
+}
+h1{
+  justify-content: center;
+  display: flex;
+  
+  
+}
+.cardheader{
+  /* background-image:url("\assets\White-Light-plain-Background-Design-Download.webp"); */
+  background-image:url("\assets\pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:aliceblue;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  border-radius: 10px;
+}
+#namebutton{
+  background-image:url("\assets\pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:aliceblue;
+  background-size: cover;
+  border-radius: 50px;
+  display: flex;
+  float: right;
+  /* justify-content: right; */
+  /* margin-left: 1000px; */
+  
+}
+.menu{
+ border-radius: 30px;
+ background-color: rgb(243, 189, 109);
+ float:left
+}
+.prof-image{
+  background-image: url('https://media.istockphoto.com/id/1209654046/vector/user-avatar-profile-icon-black-vector-illustration.jpg?s=612x612&w=0&k=20&c=EOYXACjtZmZQ5IsZ0UUp1iNmZ9q2xl1BD1VvN6tZ2UI=');
+  background-size: cover;
+
+
+}
+.addbutton{
+  /* display: flex; */
+ /* float:center; */
+ position: absolute;
+ left: 60px;
+  
+}
+.search{
+  /* display: flex;
+  float: right; */
+  position: absolute;
+  top:0;
+  right:0;
+}
+.input{
+  height: 65px;
+}
+.sidenav{
+height: 100%;
+}
